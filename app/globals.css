@@ -1,9 +1,36 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
+/* ======================= */
+/* NawaHub: ألوان الهوية + خط عربي */
+/* ======================= */
+
+/* 1️⃣ ألوان الهوية الأساسية */
+:root {
+  --primary-color: #6B46C1;    /* بنفسجي قوي */
+  --secondary-color: #D53F8C;  /* وردي داكن */
+  --bg-color: #F7FAFC;         /* خلفية فاتحة */
+  --text-color: #2D3748;       /* نص داكن */
 }
+
+/* 2️⃣ خط عربي مناسب */
+body {
+  font-family: 'Cairo', Tahoma, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* روابط وعناصر */
 a {
+  color: var(--primary-color);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  font-weight: 600;
 }
