@@ -1,26 +1,24 @@
-"use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ProjectCard from "../projects/ProjectCard";
-import ProjectForm from "../projects/ProjectForm";
+import ProjectCard from "../components/ProjectCard";
+import ProjectForm from "../components/ProjectForm";
 
-export default function Dashboard() {
+export default function DashboardPage() {
   const [projects, setProjects] = useState([]);
-
-  const handleAddProject = (project: any) => setProjects([...projects, project]);
+  const addProject = (project) => setProjects([...projects, project]);
 
   return (
-    <>
+    <div className="rtl min-h-screen bg-gray-50">
       <Navbar />
-      <main>
-        <h1>لوحة المشاريع</h1>
-        <ProjectForm onAdd={handleAddProject} />
-        <div>
-          {projects.map((p, i) => <ProjectCard key={i} {...p} />)}
+      <div className="p-8 max-w-5xl mx-auto">
+        <h1 className="text-4xl font-extrabold mb-6 text-purple-600">لوحة المشاريع</h1>
+        <ProjectForm onAdd={addProject} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          {projects.map((proj, idx) => (
+            <ProjectCard key={idx} title={proj.title} description={proj.description} link={proj.link} />
+          ))}
         </div>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </div>
   );
 }

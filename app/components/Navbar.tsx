@@ -1,16 +1,18 @@
 import Link from "next/link";
+import React from "react";
 
 export default function Navbar() {
   return (
-    <header>
-      <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div>NawaHub</div>
-        <div>
-          <Link href="/landing" style={{ margin: "0 0.5rem" }}>الرئيسية</Link>
-          <Link href="/dashboard" style={{ margin: "0 0.5rem" }}>لوحة المشاريع</Link>
-          <Link href="/about" style={{ margin: "0 0.5rem" }}>حول NawaHub</Link>
-        </div>
-      </nav>
-    </header>
+    <nav className="bg-purple-600 text-white p-4 shadow-md rtl flex justify-between items-center">
+      <div className="text-xl font-bold">NawaHub</div>
+      <ul className="flex gap-4">
+        <li><Link href="/landing" className="hover:underline">الرئيسية</Link></li>
+        <li><Link href="/dashboard" className="hover:underline">لوحة المشاريع</Link></li>
+        <li><Link href="/about" className="hover:underline">حول NawaHub</Link></li>
+        <li><Link href="/contact" className="hover:underline">اتصل بنا</Link></li>
+        <li><Link href="/privacy" className="hover:underline">سياسة الخصوصية</Link></li>
+        <li><Link href="/terms" className="hover:underline">شروط الاستخدام</Link></li>
+      </ul>
+    </nav>
   );
 }
