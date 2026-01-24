@@ -1,10 +1,19 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 export default function LandingPage() {
   return (
-    <div>
-      <h2>مرحبًا بكم في NawaHub</h2>
-      <p>منصة تمكين رقمية للمشاريع العربية.</p>
-      <p>ابدأ الآن وأنشئ مشروعك الرقمي بسهولة.</p>
-      <a href="/dashboard"><button>اذهب للوحة المشاريع</button></a>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <h1>مرحبًا بكم في NawaHub</h1>
+        <p>المنصة العربية لدعم وتمكين المشاريع الرقمية للشباب والنساء.</p>
+        <ol>
+          <li>سجل حسابك</li>
+          <li>أنشئ مشروعك</li>
+          <li>انشر مشروعك وشارك قصتك</li>
+        </ol>
+      </main>
+      <Footer />
+    </>
   );
 }

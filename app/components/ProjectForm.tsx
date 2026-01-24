@@ -1,23 +1,12 @@
-import { useState } from 'react';
-
-export default function ProjectForm({ onAdd }: { onAdd: (title: string, desc: string) => void }) {
-  const [title, setTitle] = useState('');
-  const [desc, setDesc] = useState('');
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (title && desc) {
-      onAdd(title, desc);
-      setTitle('');
-      setDesc('');
-    }
-  };
-
+export default function ProjectForm() {
   return (
-    <form onSubmit={handleSubmit}>
-      <input placeholder="عنوان المشروع" value={title} onChange={(e) => setTitle(e.target.value)} required />
-      <textarea placeholder="وصف المشروع" value={desc} onChange={(e) => setDesc(e.target.value)} required />
-      <button type="submit">إنشاء مشروع جديد</button>
-    </form>
+    <div style={{ marginTop: '2rem', padding: '1rem', border: '1px dashed #6a1b9a', borderRadius: '4px' }}>
+      <h3>إنشاء مشروع جديد</h3>
+      <form>
+        <input type="text" placeholder="اسم المشروع" style={{ display: 'block', marginBottom: '0.5rem', padding: '0.5rem', width: '100%' }} />
+        <textarea placeholder="وصف المشروع" style={{ display: 'block', marginBottom: '0.5rem', padding: '0.5rem', width: '100%' }}></textarea>
+        <button type="submit" style={{ padding: '0.5rem 1rem', background: '#6a1b9a', color: 'white', borderRadius: '4px' }}>حفظ المشروع</button>
+      </form>
+    </div>
   );
 }

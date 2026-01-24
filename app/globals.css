@@ -1,34 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  direction: rtl;
+  background-color: #fff;
+  color: #333;
 }
 a {
   text-decoration: none;
-  color: inherit;
-}
-header, footer {
-  background-color: #222;
-  color: white;
-  padding: 1rem;
-}
-main {
-  padding: 2rem;
-}
-button {
-  padding: 0.5rem 1rem;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-button:hover {
-  background-color: #005fa3;
-}
-.project-card {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 1rem;
-  margin-bottom: 1rem;
 }
