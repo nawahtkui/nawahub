@@ -11,6 +11,7 @@ export default function Navbar() {
           <Link href="/landing">الرئيسية</Link>
           <Link href="/dashboard">المشاريع</Link>
           <Link href="/about">من نحن</Link>
+          <Link href="/services">الخدمات</Link> {/* الرابط الجديد */}
           <Link href="/contact">تواصل</Link>
         </div>
       </div>
@@ -54,3 +55,4 @@ export default function RootLayout({
     </html>
   )
 }
+
