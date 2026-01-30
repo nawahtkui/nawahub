@@ -1,111 +1,85 @@
-<<<<<<< HEAD
-# NawahHub 🚀
-
-![NawahHub Logo](public/logo.png)
-
-=======
-<<<<<<< HEAD
 # NawahHub
 
-![NawahHub Logo](public/logo.png)
-
-**NawahHub** هو منصة رقمية مستقلة تعمل كبوابة للوصول إلى خدمات Cloud وSaaS متعددة، تجمع بيانات المستخدمين، وتوفر واجهة ثابتة لكل مشروع.
-=======
-# NawahHub 🚀
-
-![NawahHub Logo](public/logo.png)
-
->>>>>>> e667262 (Update README with professional version)
-**NawahHub** هي منصة رقمية مستقلة تعمل كبوابة للوصول إلى خدمات **Cloud & SaaS** متعددة، تجمع بيانات المستخدمين وتوفر واجهة ثابتة للخدمات والمشاريع الرقمية.
+NawahHub is a digital platform hub designed to provide users with access to cloud services, SaaS solutions, and project management tools. It acts as a centralized gateway where users can manage their projects, connect to external services, and interact with digital infrastructure in a secure and consistent way.
 
 ---
 
-## 🌐 روابط مهمة
-[![Website](https://img.shields.io/badge/Website-www.alnawah.net-blue)](https://www.alnawah.net)  
-[![GitHub Repo](https://img.shields.io/badge/GitHub-nawahtkui/nawahub-181717?logo=github)](https://github.com/nawahtkui/nawahub)
-<<<<<<< HEAD
-=======
->>>>>>> 7016cb8 (Add professional README for NawahHub)
->>>>>>> e667262 (Update README with professional version)
+## Features
+
+- **Project Management** – Users can create, manage, and monitor projects directly from the platform.
+- **Connectors** – Integration with external services, APIs, and cloud solutions.
+- **Authentication & Security** – Secure login, session management, and data handling.
+- **Static Frontend** – Fast and responsive interface for seamless user experience.
+- **Extensible Architecture** – Modular structure for future services and integrations.
 
 ---
 
-## 📌 وصف المنصة
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- منصة مستقلة تعمل كبوابة رقمية للوصول إلى حلول متعددة.  
-- واجهة مستخدم ثابتة وسهلة الاستخدام.  
-- تدعم جمع بيانات المستخدمين لإدارة الحسابات وتحليل الاستخدام.  
-- تصميم مرن يسمح بإضافة مشاريع وخدمات جديدة بسهولة.  
-=======
->>>>>>> e667262 (Update README with professional version)
-- بوابة رقمية للوصول إلى مشاريع وخدمات Cloud و SaaS.  
-- تصميم Dashboard سريع ومرن.  
-- جمع وتحليل بيانات المستخدمين بطريقة مؤمنة.  
-- قابل للتوسّع لإضافة خدمات/مشاريع جديدة بدون إعادة بناء النظام.  
-- مدعوم بـ **Next.js + TypeScript + CSS**. :contentReference[oaicite:4]{index=4}
-<<<<<<< HEAD
-=======
->>>>>>> 7016cb8 (Add professional README for NawahHub)
->>>>>>> e667262 (Update README with professional version)
+## High-Level Architecture
+
+This diagram shows the high-level architecture of NawahHub, illustrating how the platform connects users to digital services, cloud infrastructure, and SaaS solutions.
+
+![NawahHub Architecture](architecture/architecture.png)
+
+**Key Components:**
+
+1. **Authentication (`/api/auth`)** – Handles secure user login and session management.
+2. **Projects (`/api/projects`)** – Allows users to create and manage their projects on the platform.
+3. **Connectors (`/api/connectors`)** – Interfaces to connect user projects with external services, APIs, and cloud platforms.
+4. **Frontend (`pages/`)** – Provides a static and responsive interface for users to access services and dashboards.
+5. **Library (`lib/`)** – Contains shared utilities, database connectors, and helper functions.
+6. **Public (`public/`)** – Stores static assets, images, and files accessible by the front-end.
+
+> NawahHub acts as a centralized hub for digital projects, enabling users to integrate multiple services while providing a consistent and secure interface.
 
 ---
 
-## ⚙️ متطلبات التشغيل
-<<<<<<< HEAD
-[![Node.js](https://img.shields.io/badge/Node.js-v18+-green?logo=node.js)](https://nodejs.org/)  
-- Node.js v18 أو أحدث  
-- npm (أو pnpm/yarn)  
-=======
-<<<<<<< HEAD
-- Node.js v18 أو أحدث
-- npm v9 أو أحدث
-=======
-[![Node.js](https://img.shields.io/badge/Node.js-v18+-green?logo=node.js)](https://nodejs.org/)  
-- Node.js v18 أو أحدث  
-- npm (أو pnpm/yarn)  
->>>>>>> 7016cb8 (Add professional README for NawahHub)
->>>>>>> e667262 (Update README with professional version)
-- اتصال بالإنترنت لتحميل الحزم
+Project Structure
+
+/architecture # Architecture diagrams and visuals
+/components # React components or UI elements
+/pages # Frontend pages and routes
+/pages/api/auth # Authentication APIs
+/pages/api/projects # Project management APIs
+/pages/api/connectors # External service connectors
+/lib # Libraries and helper utilities
+/public # Static assets like images, files, etc
+
+
 
 ---
 
-## 💻 تشغيل المشروع محليًا
-1. استنساخ المستودع:
+## Getting Started
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/nawahtkui/nawahub.git
+git clone git@github.com:nawahtkui/nawahub.git
 cd nawahub
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> e667262 (Update README with professional version)
 
-تثبيت الحزم
+
+Install dependencies:
 
 npm install
 
-تشغيل بيئة التطوير:
+Run the development server:
 
 npm run dev
 
-افتح المتصفح:
 
-http://localhost:3000
-
-
-Build المشروع:
+Build for production:
 
 npm run build
 
 
-تصدير نسخة ثابتة
+Contributing 
 
-npx next export
+Fork the repository and create a new branch for your feature.
+
+Make your changes and test them locally.
+
+Submit a pull request describing your changes.
 
 
-<<<<<<< HEAD
-=======
->>>>>>> 7016cb8 (Add professional README for NawahHub)
->>>>>>> e667262 (Update README with professional version)
+License
+MIT License
+
+
